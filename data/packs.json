@@ -1,0 +1,44 @@
+{
+ "featured": [
+  {"id":"old-phone","name":"Old Phone Revival","tagline":"Give the drawer phone a job",
+   "blurb":"Turn a retired handset into a lab: vulnerable targets to attack, servers to host, and a honeypot that texts you when something bites. Nothing here needs root.",
+   "categories":["labs","server"],"maxTier":0,"accent":"#3ddc84","glyph":"◲"},
+
+  {"id":"stock","name":"Stock Phone","tagline":"No root, no unlock, no risk",
+   "blurb":"Everything that works on a completely untouched Android 10+ device. Around two thirds of the catalogue, and none of it voids anything.",
+   "tier":0,"accent":"#7dd3fc","glyph":"◉"},
+
+  {"id":"termux","name":"Termux Bootstrap","tagline":"The part Google cannot gate",
+   "blurb":"Every CLI package in the catalogue. Termux packages are not APKs, so developer verification does not touch a single one of them.",
+   "sources":["termux"],"accent":"#a78bfa","glyph":"⌗"},
+
+  {"id":"no-root","name":"No-Root Privilege","tagline":"Shizuku and what it unlocks",
+   "blurb":"Pair over wireless debugging and get ADB-level control with no root, no PC, and no bootloader unlock. Debloat, AppOps, package control.",
+   "tools":["shizuku","app-manager","canta","adb-shizuku","bt-hci-snoop","obtainium","shelter"],
+   "accent":"#22d3ee","glyph":"◫"},
+
+  {"id":"field","name":"Field Kit","tagline":"What you carry on site",
+   "blurb":"Evidence capture, notes, offline maps, comms and credentials. The unglamorous half that decides whether the report gets written.",
+   "categories":["evidence","creds","remote","comms"],"accent":"#fbbf24","glyph":"⬗"},
+
+  {"id":"appsec","name":"Mobile App Testing","tagline":"Decompile, hook, intercept",
+   "blurb":"jadx, apktool, Frida, objection and an on-device intercepting proxy — plus the vulnerable apps to point them at.",
+   "categories":["mobile","web"],"accent":"#f472b6","glyph":"⬣"},
+
+  {"id":"rf","name":"RF & Hardware","tagline":"Radio, RFID, serial",
+   "blurb":"SDR receivers, NFC and MIFARE tooling, BLE, LoRa, and the OTG serial console that talks to all of your bench hardware.",
+   "categories":["sdr","hardware"],"accent":"#fb923c","glyph":"◎"},
+
+  {"id":"netrecon","name":"Network Recon","tagline":"See the network you are on",
+   "blurb":"Capture, scan, map and intercept. Most of it works unprivileged; the raw-socket half is marked so you know before you need it.",
+   "categories":["netrecon","wireless"],"accent":"#f87171","glyph":"⬢"},
+
+  {"id":"privacy","name":"Egress Control","tagline":"Where the traffic goes",
+   "blurb":"Per-app firewall, WireGuard, Tor, and turning the phone into a proxy so a laptop can pivot through it.",
+   "categories":["vpn"],"accent":"#c084fc","glyph":"⬡"},
+
+  {"id":"nethunter","name":"Full NetHunter","tagline":"Monitor mode and injection",
+   "blurb":"Everything that needs a NetHunter kernel. Read the Tier 3 warnings before you flash anything — this is the tier that bricks phones.",
+   "tier":3,"accent":"#ef4444","glyph":"▲"}
+ ]
+}
