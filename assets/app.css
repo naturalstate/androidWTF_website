@@ -246,6 +246,15 @@ nav.top {
   text-transform: uppercase; flex: none;
 }
 .install-line button:hover { color: var(--accent); }
+/* An unpublished command gets a label, not a copy button. */
+.install-line.soon { border-left-color: var(--dim); opacity: .72; }
+.install-line .soon-tag {
+  flex: none; font: 700 9.5px var(--mono); letter-spacing: .12em; text-transform: uppercase;
+  color: var(--amber); border: 1px solid color-mix(in srgb, var(--amber) 35%, transparent);
+  background: color-mix(in srgb, var(--amber) 12%, transparent);
+  border-radius: 4px; padding: 4px 8px;
+}
+.hero-note { margin: 12px 0 0; font-size: 13.5px; color: var(--dim); max-width: 62ch; line-height: 1.6; }
 
 .stats { display: flex; gap: 34px; margin-top: 40px; flex-wrap: wrap; }
 .stat b { display: block; font-size: 30px; font-weight: 700; letter-spacing: -.03em; }

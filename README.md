@@ -5,9 +5,8 @@ build a pack, and get the install steps for it.
 
 **Live at <https://naturalstate.github.io/androidWTF_website/>**
 
-Sibling of **[macWTF](https://naturalstate.github.io/macwtf_website/)**
-([repo](https://github.com/naturalstate/macWTF)), and deliberately built on the
-same visual system.
+Sibling of **[macWTF](https://naturalstate.github.io/macwtf_website/)**, and
+deliberately built on the same visual system.
 
 > **Preview.** The catalogue is curated but the project's own tooling — the
 > `wtf.sh` Termux bootstrap and the adb pack installer — does not exist yet.

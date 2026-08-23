@@ -146,7 +146,7 @@ function Nav({ route }) {
     <a href="#/tools" class=${route.name === "tools" ? "on" : ""}>Tools</a>
     <a href="#/packs" class=${route.name === "packs" || route.name === "pack" ? "on" : ""}>Packs</a>
     <a href="#/tiers" class=${route.name === "tiers" ? "on" : ""}>Tiers</a>
-    <a href="https://github.com/naturalstate/androidWTF">GitHub</a>`;
+    <a href="https://github.com/naturalstate/androidWTF_website">GitHub</a>`;
 
   return html`
     <nav class="top">
@@ -249,14 +249,14 @@ function Home({ data, packs }) {
           <a class="btn ghost" href="#/tools">All ${data.tools.length} tools</a>
           <a class="btn ghost" href="#/tiers">Will it work on my phone?</a>
         </div>
-        <div class="install-line" style="margin-top:26px;max-width:700px">
+        <div class="install-line soon" style="margin-top:26px;max-width:700px">
           <span>${BOOTSTRAP}</span>
-          <button onClick=${e => {
-            navigator.clipboard?.writeText(BOOTSTRAP);
-            const b = e.currentTarget; b.textContent = "copied";
-            setTimeout(() => (b.textContent = "copy"), 1200);
-          }}>copy</button>
+          <b class="soon-tag">not published yet</b>
         </div>
+        <p class="hero-note">
+          The one-line bootstrap is still being built. Everything in the catalogue
+          below works today — browse it and take the install steps directly.
+        </p>
         <div class="stats">
           <div class="stat"><b>${data.tools.length}</b><span>tools</span></div>
           <div class="stat"><b>${t0}</b><span>need no root</span></div>
@@ -943,7 +943,7 @@ function App({ data, packs }) {
         </div>
         <p style="margin:18px 0 0">
           Package identifiers verified against F-Droid, GitHub, PyPI, the Go module proxy and the Termux repos ·
-          <a href="https://github.com/naturalstate/androidWTF">source on GitHub</a>
+          <a href="https://github.com/naturalstate/androidWTF_website">source on GitHub</a>
         </p>
       </footer>
     </div>`;
