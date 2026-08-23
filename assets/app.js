@@ -317,7 +317,8 @@ function Home({ data, packs }) {
           <a class="plat live" href="https://naturalstate.github.io/macwtf_website/">
             <b>macOS</b><span>available now →</span></a>
           <div class="plat"><b>Kali</b><span>coming soon</span></div>
-          <div class="plat"><b>Windows</b><span>coming soon</span></div>
+          <a class="plat live" href="https://naturalstate.github.io/windowsWTF_website/">
+            <b>Windows</b><span>available now →</span></a>
           <div class="plat on"><b>Android</b><span>you are here</span></div>
         </div>
       </section>
@@ -938,7 +939,7 @@ function App({ data, packs }) {
         <div class="family">
           <a class="fam live" href="https://naturalstate.github.io/macwtf_website/">macWTF <em>live</em></a>
           <span class="soon">KaliWTF <em>soon</em></span>
-          <span class="soon">WindowsWTF <em>soon</em></span>
+          <a class="fam live" href="https://naturalstate.github.io/windowsWTF_website/">windowsWTF <em>live</em></a>
           <span class="here">androidWTF</span>
         </div>
         <p style="margin:18px 0 0">

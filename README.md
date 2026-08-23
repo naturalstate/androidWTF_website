@@ -5,7 +5,8 @@ build a pack, and get the install steps for it.
 
 **Live at <https://naturalstate.github.io/androidWTF_website/>**
 
-Sibling of **[macWTF](https://naturalstate.github.io/macwtf_website/)**, and
+Sibling of **[macWTF](https://naturalstate.github.io/macwtf_website/)** and
+**[windowsWTF](https://naturalstate.github.io/windowsWTF_website/)**, and
 deliberately built on the same visual system.
 
 > **Preview.** The catalogue is curated but the project's own tooling — the
