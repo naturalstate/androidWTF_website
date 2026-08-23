@@ -259,8 +259,8 @@ function Home({ data, packs }) {
         </div>
         <p class="hero-note">
           Run it inside Termux. Install Termux itself from F-Droid or GitHub Releases
-          first — it is an APK, so it cannot install itself. Then <code>wtf doctor</code>
-          tells you which tier this phone is on.
+          first — it is an APK, so it cannot install itself.
+          Then <code>wtf doctor</code>${" "}tells you which tier this phone is on.
         </p>
         <div class="stats">
           <div class="stat"><b>${data.tools.length}</b><span>tools</span></div>
@@ -269,6 +269,41 @@ function Home({ data, packs }) {
           <div class="stat"><b>${data.categories.length}</b><span>categories</span></div>
         </div>
       </header>
+
+      <section>
+        <div class="sec-head">
+          <h2>Digging out an <span class="zing">old phone</span>?</h2>
+          <p>Read this first. Nearly every failure is Termux being stale, not the phone being too old.</p>
+        </div>
+        <div class="packs">
+          <div class="pack" style="--pack:var(--t3)">
+            <span class="glyph">⛔</span>
+            <div class="tagline">Step 1 · check the source</div>
+            <h3>Not the Play Store build</h3>
+            <p>Termux was abandoned on the Play Store in 2020 and its package repositories
+               are dead. That build cannot be repaired. Uninstall it and install from
+               F-Droid or GitHub Releases — you cannot upgrade in place, the signing keys
+               differ.</p>
+          </div>
+          <div class="pack" style="--pack:var(--t2)">
+            <span class="glyph">⟳</span>
+            <div class="tagline">Step 2 · update termux</div>
+            <h3>“Metadata integrity can't be verified”</h3>
+            <p>An old bootstrap points at <code>packages.termux.org</code>, which now
+               redirects, and apt refuses to follow a redirect for a signed repo. It reads
+               like a security problem; it is a stale mirror. Run
+               <code>termux-change-repo</code>, then <code>pkg update</code>.</p>
+          </div>
+          <div class="pack" style="--pack:var(--t0)">
+            <span class="glyph">◲</span>
+            <div class="tagline">Step 3 · expect a lower tier</div>
+            <h3>Old does not mean useless</h3>
+            <p>Below Android 10 the shell half of the catalogue is almost entirely intact —
+               Termux itself supports Android 7. What degrades is the APK half, where minSdk
+               floors bite. <code>wtf doctor</code> tells you exactly where you stand.</p>
+          </div>
+        </div>
+      </section>
 
       <section id="tiers">
         <div class="sec-head">
