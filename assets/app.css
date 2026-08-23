@@ -254,6 +254,7 @@ nav.top {
   background: color-mix(in srgb, var(--amber) 12%, transparent);
   border-radius: 4px; padding: 4px 8px;
 }
+.hero-note code { font: 500 .92em var(--mono); color: var(--accent); }
 .hero-note { margin: 12px 0 0; font-size: 13.5px; color: var(--dim); max-width: 62ch; line-height: 1.6; }
 
 .stats { display: flex; gap: 34px; margin-top: 40px; flex-wrap: wrap; }

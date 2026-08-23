@@ -146,7 +146,7 @@ function Nav({ route }) {
     <a href="#/tools" class=${route.name === "tools" ? "on" : ""}>Tools</a>
     <a href="#/packs" class=${route.name === "packs" || route.name === "pack" ? "on" : ""}>Packs</a>
     <a href="#/tiers" class=${route.name === "tiers" ? "on" : ""}>Tiers</a>
-    <a href="https://github.com/naturalstate/androidWTF_website">GitHub</a>`;
+    <a href="https://github.com/naturalstate/androidWTF">GitHub</a>`;
 
   return html`
     <nav class="top">
@@ -228,7 +228,7 @@ function TierLadder({ data, linkTo }) {
 
 // ------------------------------------------------------------------- home
 
-const BOOTSTRAP = "curl -fsSL https://raw.githubusercontent.com/naturalstate/androidWTF/main/wtf.sh | bash";
+const BOOTSTRAP = "curl -fsSL https://raw.githubusercontent.com/naturalstate/androidWTF/main/platforms/android/bootstrap/install.sh | bash";
 
 function Home({ data, packs }) {
   const t0 = data.tools.filter(t => t.tier === 0).length;
@@ -249,13 +249,18 @@ function Home({ data, packs }) {
           <a class="btn ghost" href="#/tools">All ${data.tools.length} tools</a>
           <a class="btn ghost" href="#/tiers">Will it work on my phone?</a>
         </div>
-        <div class="install-line soon" style="margin-top:26px;max-width:700px">
+        <div class="install-line" style="margin-top:26px;max-width:700px">
           <span>${BOOTSTRAP}</span>
-          <b class="soon-tag">not published yet</b>
+          <button onClick=${e => {
+            navigator.clipboard?.writeText(BOOTSTRAP);
+            const b = e.currentTarget; b.textContent = "copied";
+            setTimeout(() => (b.textContent = "copy"), 1200);
+          }}>copy</button>
         </div>
         <p class="hero-note">
-          The one-line bootstrap is still being built. Everything in the catalogue
-          below works today — browse it and take the install steps directly.
+          Run it inside Termux. Install Termux itself from F-Droid or GitHub Releases
+          first — it is an APK, so it cannot install itself. Then <code>wtf doctor</code>
+          tells you which tier this phone is on.
         </p>
         <div class="stats">
           <div class="stat"><b>${data.tools.length}</b><span>tools</span></div>
@@ -944,7 +949,7 @@ function App({ data, packs }) {
         </div>
         <p style="margin:18px 0 0">
           Package identifiers verified against F-Droid, GitHub, PyPI, the Go module proxy and the Termux repos ·
-          <a href="https://github.com/naturalstate/androidWTF_website">source on GitHub</a>
+          <a href="https://github.com/naturalstate/androidWTF">androidWTF on GitHub</a>
         </p>
         <p class="fam-link"><a href="https://naturalstate.github.io/macwtf_website/#/wtf">All three WTF tools →</a></p>
       </footer>
