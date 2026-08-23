@@ -946,6 +946,7 @@ function App({ data, packs }) {
           Package identifiers verified against F-Droid, GitHub, PyPI, the Go module proxy and the Termux repos ·
           <a href="https://github.com/naturalstate/androidWTF_website">source on GitHub</a>
         </p>
+        <p class="fam-link"><a href="https://naturalstate.github.io/macwtf_website/#/wtf">All three WTF tools →</a></p>
       </footer>
     </div>`;
 }

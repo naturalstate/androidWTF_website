@@ -554,3 +554,8 @@ a.plat.live:hover span { color: var(--purple); }
   * { animation: none !important; transition: none !important; }
   html { scroll-behavior: auto; }
 }
+
+/* Quiet footer pointer to the shared landing page for all three WTF tools. */
+.fam-link { margin: 10px 0 0; }
+.fam-link a { font: 500 11.5px var(--mono); color: var(--dim); letter-spacing: .04em; }
+.fam-link a:hover { color: var(--accent); }
