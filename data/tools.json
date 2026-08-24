@@ -23,7 +23,7 @@
    "slug": "wireless",
    "label": "Wireless & Wardriving",
    "security": true,
-   "count": 6
+   "count": 7
   },
   {
    "slug": "hardware",
@@ -829,6 +829,24 @@
    "license": "free",
    "flags": [],
    "notes": "Binds privileged ports, so root is mandatory.",
+   "unverified": true
+  },
+  {
+   "id": "muon",
+   "name": "Muon",
+   "description": "Terminal WiFi manager, first-party. Brings adapters up and down, toggles monitor mode, matches chipsets against a driver database, and puts 100+ wireless and pentest commands behind a menu with variable substitution \u2014 so you stop typing airodump-ng syntax from memory.",
+   "category": "wireless",
+   "categoryLabel": "Wireless & Wardriving",
+   "isSecurity": true,
+   "tier": 0,
+   "source": "termux",
+   "package": "https://github.com/naturalstate/muon",
+   "method": "git",
+   "license": "free",
+   "flags": [
+    "essential"
+   ],
+   "notes": "Single Python 3 file, no pip dependencies. Detects two modes at launch: full with root, limited without. In limited mode the root-only actions are greyed out rather than hidden, and you still get scanning, the command reference, the adapter/driver database and the troubleshooting guide. Termux limited mode also wants 'pkg install termux-api' and the Termux:API app.",
    "unverified": true
   },
   {

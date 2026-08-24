@@ -127,6 +127,7 @@ TOOLS = {
 
 # ------------------------------------------------------------------ wireless
 "wireless": [
+ ("muon", "Muon", "Terminal WiFi manager, first-party. Brings adapters up and down, toggles monitor mode, matches chipsets against a driver database, and puts 100+ wireless and pentest commands behind a menu with variable substitution — so you stop typing airodump-ng syntax from memory.", 0, "termux", "https://github.com/naturalstate/muon", "free", [E], "Single Python 3 file, no pip dependencies. Detects two modes at launch: full with root, limited without. In limited mode the root-only actions are greyed out rather than hidden, and you still get scanning, the command reference, the adapter/driver database and the troubleshooting guide. Termux limited mode also wants 'pkg install termux-api' and the Termux:API app.", "git"),
  ("wigle", "WiGLE WiFi Wardriving", "Logs every network you drive past with GPS, and exports CSV. Works on a completely stock phone.", 0, "fdroid", "net.wigle.wigleandroid", "free", [E], ""),
  ("aircrack-ng", "aircrack-ng suite", "The classic wireless attack suite. Everything in it needs monitor mode.", 3, "nethunter", "aircrack-ng", "free", ["exthw"], "Internal Android chipsets do not do monitor mode. You need a NetHunter kernel, and in practice an external adapter over OTG."),
  ("kismet", "Kismet", "Wireless detector, sniffer and IDS. Wants monitor mode on a real interface.", 3, "nethunter", "kismet", "free", ["exthw"], ""),
